@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<div class="page-header">
+  <h1>Postercat <small>For all your posting needs</small></h1>
+</div>
+
+<div class="list-group">
+  <% @links.each do |link| %>
+    <%= link_to link.title, link.url, class: "list-group-item" %>
+  <% end %>
+</div>
